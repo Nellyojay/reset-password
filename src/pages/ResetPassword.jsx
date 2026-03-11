@@ -10,9 +10,6 @@ export default function ResetPassword() {
   const [success, setSuccess] = useState(false);
   const accessToken = searchParams.get("access_token");
   const errors = ["not found", "Password"];
-  console.log("Email:", email);
-  console.log("Password:", password);
-  console.log("Confirm Password:", confirmPassword);
 
   const validatePassword = (pwd) => {
     const invalidChars = /[<>|\\]/.test(pwd);
