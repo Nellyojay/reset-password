@@ -2,7 +2,7 @@
   "name": "reset-password",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nellyojay.github.io/reset-password",
+  "homepage": "https://nellyojay.github.io/reset-password/",
   "type": "module",
   "scripts": {
     "dev": "vite",
