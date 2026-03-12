@@ -8,7 +8,6 @@ export default function ResetPassword() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [success, setSuccess] = useState(false);
-  const accessToken = searchParams.get("access_token");
   const errors = ["not found", "Password"];
 
   const validatePassword = (pwd) => {
@@ -89,15 +88,6 @@ export default function ResetPassword() {
   useEffect(() => {
     if (email) {
       validateEmail();
-    }
-
-    if (accessToken) {
-      supabase.auth.setSession(accessToken)
-        .then(({ error }) => {
-          if (error) {
-            setMessage("Invalid access token. Please try resetting your password again.");
-          }
-        })
     }
   }, [email]);
 
