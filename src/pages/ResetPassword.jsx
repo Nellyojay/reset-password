@@ -93,7 +93,7 @@ export default function ResetPassword() {
 
   return (
     <div className="reset-container">
-      <h2>Reset Password</h2>
+      <h2>Reset Passwords</h2>
 
       {email && (
         <p className={errors.some((error) => message.includes(error)) ? "error" : "success"}>
